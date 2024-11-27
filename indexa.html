@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Minecraft Server Hosting with Maze Bank Payment">
+    <title>Minecraft Server Hosting - Maze Hosting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2d2d2d;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 0 20px;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        .plans {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .plan {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .plan h3 {
+            font-size: 1.5rem;
+        }
+        .plan .price {
+            font-size: 2rem;
+            color: #4caf50;
+            margin-top: 10px;
+        }
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .plan ul li {
+            margin: 10px 0;
+        }
+        .plan button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .plan button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #2d2d2d;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .payment-form {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .payment-form input,
+        .payment-form button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .payment-form button {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+        .payment-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Maze Hosting</h1>
+        <p>Your Minecraft server, hosted with the best performance.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#plans">Hosting Plans</a>
+        <a href="#features">Features</a>
+        <a href="#payment">Payment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hosting Plans Section -->
+    <section id="plans">
+        <h2>Choose Your Plan</h2>
+        <div class="plans">
+            <!-- Basic Plan -->
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p class="price">$5.99 / month</p>
+                <ul>
+                    <li>1 GB RAM</li>
+                    <li>10 Player Slots</li>
+                    <li>24/7 Uptime</li>
+                </ul>
+                <button onclick="window.location.href='#payment'">Choose Plan</button>
+            </div>
+
+            <!-- Advanced Plan -->
+            <div class="plan">
+                <h3>Advanced Plan</h3>
+                <p class="price">$15.99 / month</p>
+                <ul>
+                    <li>4 GB RAM</li>
+                    <li>50 Player Slots</li>
+                    <li>24/7 Uptime</li>
+                    <li>SSD Storage</li>
+                </ul>
+                <button onclick="window.location.href='#payment'">Choose Plan</button>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="plan">
+                <h3>Pro Plan</h3>
+                <p class="price">$29.99 / month</p>
+                <ul>
+                    <li>8 GB RAM</li>
+                    <li>100 Player Slots</li>
+                    <li>24/7 Uptime</li>
+                    <li>SSD Storage</li>
+                    <li>Priority Support</li>
+                </ul>
+                <button onclick="window.location.href='#payment'">Choose Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>High-Performance Servers</li>
+            <li>Instant Setup</li>
+            <li>Low Latency</li>
+            <li>24/7 Support</li>
+            <li>Full Control with Custom Mods</li>
+        </ul>
+    </section>
+
+    <!-- Maze Bank Payment Section -->
+    <section id="payment">
+        <h2>Pay with Maze Bank</h2>
+        <p>Complete your payment using the Maze Bank Payment Gateway. Your transaction will be processed securely.</p>
+
+        <div class="payment-form">
+            <h3>Payment Form</h3>
+            <form>
+                <input type="text" name="card-name" placeholder="Name on Card" required>
+                <input type="number" name="card-number" placeholder="Card Number" required>
+                <input type="text" name="expiry-date" placeholder="Expiry Date (MM/YY)" required>
+                <input type="text" name="cvv" placeholder="CVV" required>
+                <button type="submit">Pay with Maze</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Maze Hosting | All Rights Reserved</p>
+        <p>Follow us: <a href="https://twitter.com/mazehosting" target="_blank">Twitter</a> | <a href="https://facebook.com/mazehosting" target="_blank">Facebook</a></p>
+    </footer>
+
+</body>
+</html>
